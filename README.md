@@ -32,6 +32,14 @@ Start template for python package.
 * **make clean** - clean project, remove *.pyc and other templorary files
 * **make deploy** - create vitrual environment
 
+### TODO ###
+* tox
+* buildout
+* automatically tests on all py for license, shabang, encoding, __ver__, etc.
+* check openstack template for additional goodies
+* distutils
+* docs in markdown
+* deployment with make and src, deb, rpm creation from [here]()
 
         .
         |-- bin
