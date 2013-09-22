@@ -1,4 +1,2 @@
-python-stdeb
-python-unittest2
 fakeroot
-python-all
+python-stdeb

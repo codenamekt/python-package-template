@@ -13,28 +13,28 @@ setup(name='my_program',
       description='Short description of my_program...',
       long_description='Short description of my_program...',
 
-      packages = find_packages(),
-      include_package_data = True,
-      package_data = {
-        '': ['*.txt', '*.rst'],
-        'my_program': ['data/*.html', 'data/*.css'],
+      packages=find_packages(),
+      include_package_data=True,
+      package_data={
+          '': ['*.txt', '*.rst'],
+          'my_program': ['data/*.html', 'data/*.css'],
       },
-      exclude_package_data = { '': ['README.txt'] },
-      
-      scripts = ['bin/my_program'],
-      
+      exclude_package_data={'': ['README.txt']},
+
+      scripts=['bin/my_program'],
+
       keywords='python tools utils internet www',
       license='GPL',
       classifiers=['Development Status :: 5 - Production/Stable',
                    'Natural Language :: English',
                    'Operating System :: OS Independent',
                    'Programming Language :: Python :: 2',
-                   'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
-                   'License :: OSI Approved :: GNU Affero General Public License v3',
+                   ('License :: OSI Approved :: GNU Library or Lesser',
+                    ' General Public License (LGPL)'),
+                   ('License :: OSI Approved :: GNU Affero General Public ',
+                    'License v3'),
                    'Topic :: Internet',
-                   'Topic :: Internet :: WWW/HTTP',
-                  ],
-                  
+                   'Topic :: Internet :: WWW/HTTP'],
+
       #setup_requires = ['python-stdeb', 'fakeroot', 'python-all'],
-      install_requires = ['setuptools'],
-     )
+      install_requires=['setuptools'])
